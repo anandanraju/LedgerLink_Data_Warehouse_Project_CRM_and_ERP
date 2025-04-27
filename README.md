@@ -1,6 +1,17 @@
 # Ledger-Link Datawarehouse Project CRM & ERP
 
-This Data Warehouse project has been designed using a **Medallion Architecture** approach to effectively manage, process, and organize information drawn from both **CRM** (Customer Relationship Management) and **ERP** (Enterprise Resource Planning) systems. The Medallion Architecture — structured into **Bronze**, **Silver**, and **Gold** layers — ensures a systematic and scalable way to ingest raw data, refine and enrich it, and ultimately prepare it for analytics and business reporting.
+This Data Warehouse project has been designed using a **Medallion Architecture** approach to effectively manage, process, and organize information drawn from both 
+
+* **CRM** (Customer Relationship Management)
+* **ERP** (Enterprise Resource Planning)
+
+The Medallion Architecture is structured into 
+
+* **Bronze layer**
+* **Silver layer**
+* **Gold layer**
+
+To ensures a systematic and scalable way to ingest raw data, refine and enrich it, and ultimately prepare it for analytics and business reporting.
 
 I conceptualized and developed this project as part of my portfolio, aiming to strengthen my capabilities in both **Data Engineering** and **Data Analysis**. Through this project, I am building a foundation to accommodate future enhancements, allowing for continuous improvements and adjustments aligned with evolving business needs and technological advancements.
 
