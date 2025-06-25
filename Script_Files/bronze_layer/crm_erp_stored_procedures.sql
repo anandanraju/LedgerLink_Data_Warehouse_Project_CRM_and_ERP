@@ -1,9 +1,11 @@
 EXEC [Bronze_Layer].load_bronze;
 
 CREATE OR ALTER PROCEDURE [Bronze_Layer].Load_Bronze AS
+
 BEGIN
-	DECLARE @start_time DATETIME, @end_time DATETIME;
+	DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start DATETIME, @batch_end DATETIME;
 	BEGIN TRY
+		SET @batch_start = GETDATE();
 		PRINT '==============================================';
 		PRINT 'Data Loading Initiated for Bronze Layer';
 		PRINT '==============================================';
@@ -106,9 +108,10 @@ BEGIN
 		PRINT '>> Load Duration : '+ CAST(DATEDIFF(SECOND, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '----------------------------------------------';
 
-
+		SET @batch_end = GETDATE();
 		PRINT '----------------------------------------------'
 		PRINT 'Bronze Layer Loading Completed Successfully ';
+		PRINT 'Total Load Duration: '+ CAST(DATEDIFF(SECOND,@batch_start,@batch_end) AS NVARCHAR) +' seconds';
 		PRINT '----------------------------------------------'
 	END TRY
 	BEGIN CATCH
