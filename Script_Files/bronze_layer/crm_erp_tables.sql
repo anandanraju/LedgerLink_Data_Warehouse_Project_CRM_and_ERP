@@ -1,3 +1,27 @@
+/*
+====================================================================================================================
+				   DDL SCRIPT : CREATE BRONZE CRM AND ERP TABLES
+====================================================================================================================
+Purpose:
+		This script is used to create and manage tables within the 'BRONZE' schema. 
+		It ensures that any existing tables are dropped before re-creation, allowing for a clean and 
+		consistent structure across the data ingestion layer.
+Functionality:
+		Checks for the existence of each table in the 'BRONZE' schema and drops it if present.
+		Recreates the required tables using the latest DDL (Data Definition Language).
+		Ensures the raw data layer is correctly structured and ready for ingestion from source systems.
+Usage:
+		Run this script to reinitialize the Bronze Layer tables, particularly during:
+			* Initial setup of the data pipeline
+			* Schema refreshes or updates
+			* Environment resets
+
+This helps maintain integrity and alignment with the upstream source data format.
+====================================================================================================================
+*/
+
+USE [LedgerLink_DWH];
+
 -- CRM TABLES
 
 -- CRM Customer_Info TABLE
