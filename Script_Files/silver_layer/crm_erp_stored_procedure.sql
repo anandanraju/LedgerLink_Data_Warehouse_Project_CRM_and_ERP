@@ -1,6 +1,6 @@
 /*
 ===================================================================================================================================================
-							       DDL SCRIPT : CREATE STORED PROCEDURE FOR SILVER LAYER
+					      DDL SCRIPT: CREATE STORED PROCEDURE FOR SILVER LAYER
 ===================================================================================================================================================
 Purpose:
 		This stored procedure is built to remove all existing data from the Silver Layer tables in the LedgerLink Data Warehouse (DWH). 
