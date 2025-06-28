@@ -1,0 +1,7 @@
+============================================================================================================================
+⚠️ Note:
+
+Due to privacy and confidentiality constraints, the original datasets used in these projects have not been included in this repository. 
+However, the full project code, logic, and implementation details are available for review.
+
+============================================================================================================================
