@@ -1,5 +1,22 @@
-EXEC [Bronze_Layer].load_bronze;
+/*
+===================================================================================================================================================
+					    DDL SCRIPT : CREATE STORED PROCEDURE FOR BRONZE LAYER
+===================================================================================================================================================
+Purpose:
+		This stored procedure is designed to remove all existing data from the Bronze Layer tables within the LedgerLink Data Warehouse (DWH). 
+		It uses the TRUNCATE command to efficiently clear data from both CRM and ERP source tables, while retaining their structure.
+Functionality:
+		Performs a TRUNCATE operation on all relevant tables in the Bronze_Layer schema.
+		Targets both CRM-related and ERP-related raw data tables.
+		Ensures faster and minimally logged data deletion compared to DELETE.
+		Prepares the tables for a fresh load during scheduled or manual ETL runs.
+===================================================================================================================================================
+*/
 
+-- Run this after Updating the Bronze Layer
+-- EXEC [Bronze_Layer].Load_Bronze;
+ 
+-- Initiate first
 CREATE OR ALTER PROCEDURE [Bronze_Layer].Load_Bronze AS
 
 BEGIN
