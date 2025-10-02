@@ -24,7 +24,7 @@ I conceptualized and developed this project as part of my portfolio, aiming to s
 
 **Tools**: **`SQL Server`, `Excel`**  
 
-**Techs**: **`Draws.io`, `Notion`**  
+**Techs**: **`Draw.io`, `Notion`**  
 
 
 ## 📐 Entity Relationship Diagram
